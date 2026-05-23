@@ -1,0 +1,10 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f8f3e8" />
+  <rect x="80" y="60" width="440" height="280" rx="24" fill="#fff4d9" stroke="#f2c14e" stroke-width="12" />
+  <circle cx="180" cy="180" r="50" fill="#f2a365" />
+  <circle cx="340" cy="150" r="45" fill="#90be6d" />
+  <path d="M125 260 Q200 190 280 255" stroke="#577590" stroke-width="18" fill="none" stroke-linecap="round" />
+  <path d="M350 240 Q430 170 500 250" stroke="#4d908e" stroke-width="18" fill="none" stroke-linecap="round" />
+  <path d="M130 140 L180 110 L200 180 Z" fill="#f94144" />
+  <text x="50%" y="360" font-family="Segoe UI, sans-serif" font-size="30" fill="#577590" text-anchor="middle">School Art</text>
+</svg>

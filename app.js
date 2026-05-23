@@ -2,93 +2,60 @@
 const blogPosts = [
     {
         id: 1,
-        title: "Empowering Local Communities: My Journey in DevFest Organizing",
-        summary: "Reflecting on the challenges and victories of organizing large-scale developer gatherings, fostering inclusivity, and building a thriving local technical community.",
-        image: "assets/community_thumbnail.png",
-        tag: "Community",
+        title: "My First School Art Show: A 5th Grader's Story",
+        summary: "A simple story about preparing art for school, feeling proud, and sharing pictures with friends.",
+        image: "assets/school_art.svg",
+        tag: "Student Life",
         date: "May 10, 2026",
-        readTime: "6 min read",
+        readTime: "4 min read",
         likes: 124,
         views: 840,
         content: `
-            <p>Community building is more than just organizing meetings; it is about building safe spaces for developers of all skill levels to share knowledge, find support, and push boundaries together. Over the past year, I had the privilege of serving as a core organizer for local developer meetups, culminating in our largest DevFest event yet.</p>
+            <p>I was very excited when our teacher announced a school art show. I am in 5th standard, and I wanted to share my drawings with everyone in my class.</p>
             
-            <h3>The Catalyst for My Journey</h3>
-            <p>I started as a quiet attendee in local meetups. Seeing how seasoned developers volunteered their time to guide others inspired me. I wanted to pay it forward. Organizing events became the logical step. It allowed me to blend my technical skills with project management and, most importantly, human connection.</p>
+            <h3>Preparing My Art</h3>
+            <p>I spent a few afternoons drawing animals, flowers, and happy moments from school. I used crayons and markers, and I smiled when my pictures started to look like what I imagined.</p>
             
             <blockquote>
-                "A technology community is only as strong as its ability to support its beginners."
+                "I felt proud when my teacher said my drawing was very colorful."
             </blockquote>
             
-            <h3>Behind the Scenes of a Mega Event</h3>
-            <p>Organizing an event for over 300 developers involves coordinating multiple moving parts:</p>
-            <ul>
-                <li><strong>Speaker Selection:</strong> Finding diverse topics and voices, ranging from web accessibility to cloud computing.</li>
-                <li><strong>Sponsor Relations:</strong> Securing resources for food, venue, and stickers/swag.</li>
-                <li><strong>Logistics:</strong> Organizing registration desks, tech checks, and visual designs.</li>
-            </ul>
-            <p>One of the biggest hurdles we faced was when a keynote speaker had a flight delay. We had to pivot, rearrange the schedule, and fill the gap with an impromtu panel discussion on <em>"The Future of Web Development"</em>. It ended up being the most engaged session of the day!</p>
+            <h3>The Big Day</h3>
+            <p>On the day of the show, I hung my pictures on the wall and walked around to see my friends' drawings. It was fun to talk about our art and to hear everyone cheer.</p>
             
-            <h3>Key Lessons Learned</h3>
-            <p>If you're looking to start or grow a local community, remember these three pillars:</p>
-            <ol>
-                <li><strong>Inclusivity First:</strong> Always make code of conduct clear. Offer introductory tracks for absolute beginners.</li>
-                <li><strong>Feedback Loops:</strong> Gather feedback after every session. It shows you care about the audience's time.</li>
-                <li><strong>Delegation & Trust:</strong> You cannot run a community alone. Empower volunteers and let them own sections of the organization.</li>
-            </ol>
-            
-            <h3>What's Next?</h3>
-            <p>We are currently planning a series of hands-on workshops on modern JavaScript and open-source contributions. The goal is to get more hands-on coding practice and help students make their first pull requests. Stay tuned!</p>
+            <h3>Why It Was Special</h3>
+            <p>My favorite part was sharing my picture with my family later. I learned that even simple drawings can make people smile.</p>
         `,
         comments: [
-            { author: "Aarav Sharma", text: "Amazing writeup, Ishika! DevFest was incredible, thanks to the organizing team's efforts.", time: "1 day ago" },
+            { author: "Aarav Sharma", text: "Amazing writeup, Ishika! The campus showcase was incredible, thanks to the organizing team's efforts.", time: "1 day ago" },
             { author: "Sneha Patel", text: "That panel discussion was actually my favorite part! Incredible quick thinking.", time: "2 days ago" }
         ]
     },
     {
         id: 2,
-        title: "Why Technical Writing is a Core Developer Skill",
-        summary: "Writing documentation and articles isn't just for technical writers. Here is how documenting your code and writing articles makes you a far better software engineer.",
-        image: "assets/writing_thumbnail.png",
+        title: "Why I Love Writing Stories in 5th Standard",
+        summary: "Writing little stories helps me remember fun school days and share my thoughts with friends.",
+        image: "assets/journal.svg",
         tag: "Writing",
         date: "April 28, 2026",
         readTime: "4 min read",
         likes: 86,
         views: 520,
         content: `
-            <p>Many developers view writing documentation, tutorials, or articles as an afterthought—something to be done only when the code is finished (if at all). However, the process of writing is actually a primary driver of technical clarity. By teaching a concept, you truly understand it.</p>
+            <p>I like writing short stories about my school day, my friends, and the drawings I make. It helps me remember fun moments and share them like a little adventure.</p>
             
-            <h3>Writing as a Debugging Tool</h3>
-            <p>Have you ever tried to explain a complex bug to a peer, only to realize the solution midway through the explanation? This is known as "Rubber Duck Debugging." Writing operates under a similar principle, but on a structural scale.</p>
-            <p>When you write an article explaining how a React hook works or how to optimize a database query, you are forced to structure your thoughts sequentially. You begin to notice gaps in your understanding that you might have glossed over during rapid prototyping.</p>
+            <h3>Writing as a Fun Habit</h3>
+            <p>I keep a small notebook at my desk. After school, I write one sentence about something nice that happened. Sometimes it is about my art, and sometimes it is about a game I played.</p>
             
-            <pre><code>// Writing clear code comments is the first step:
-/**
- * Debounces a callback to optimize search keystroke event loops.
- * @param {Function} func - The callback function
- * @param {number} wait - Debounce delay in milliseconds
- */
-function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
-}</code></pre>
+            <h3>Why Writing Makes Me Happy</h3>
+            <p>Writing makes me feel proud because I can say what I think. When I read my own story later, I smile at how much I have grown.</p>
             
-            <h3>How Writing Elevates Your Career</h3>
-            <p>Technical writing creates a visible portfolio of your knowledge. It provides a way for hiring managers, open-source maintainers, and peers to assess your communication skills. In professional software engineering, communication is just as critical as writing clean code.</p>
-            
-            <h3>Getting Started with Technical Writing</h3>
-            <p>If you're hesitant to start writing, here are some actionable tips:</p>
+            <h3>How to Start</h3>
+            <p>If you want to write too, try these ideas:</p>
             <ul>
-                <li><strong>Write for your past self:</strong> Think about a problem that took you 3 hours to solve this week. Write the exact guide you wish you had found on Google.</li>
-                <li><strong>Keep it simple:</strong> Avoid overly formal academic language. Write the way you speak to a coworker.</li>
-                <li><strong>Include code sandboxes:</strong> Make your code examples executable or easy to copy-paste.</li>
+                <li><strong>Write about your day:</strong> What was the funniest thing that happened?</li>
+                <li><strong>Draw and then write:</strong> Make a picture, then tell a little story about it.</li>
+                <li><strong>Keep it simple:</strong> Short sentences are perfect for sharing your ideas.</li>
             </ul>
         `,
         comments: [
@@ -97,63 +64,32 @@ function debounce(func, wait) {
     },
     {
         id: 3,
-        title: "A Developer's Guide to Mastering Vanilla JavaScript Concepts",
-        summary: "Deep dive into JS core concepts: Closures, Event Loop, Scope Chains, and Promises. Master the foundation before jumping into heavy frontend frameworks.",
-        image: "assets/javascript_thumbnail.png",
-        tag: "Web Dev",
+        title: "How I Practice Art with Simple Daily Sketches",
+        summary: "A story about practicing drawings every day and finding fun in small art projects.",
+        image: "assets/sketchbook.svg",
+        tag: "Creativity",
         date: "April 15, 2026",
-        readTime: "7 min read",
+        readTime: "5 min read",
         likes: 198,
         views: 1205,
         content: `
-            <p>In the modern frontend landscape, frameworks like React, Vue, and Svelte dominate. Yet, beneath all these libraries lies Vanilla JavaScript. Understanding the fundamental quirks of the language is what separates junior developers from senior engineers.</p>
+            <p>I practice drawing every day after school. Sometimes I draw animals, other times I draw my house or my favorite cartoon characters.</p>
             
-            <h3>1. The Power of Closures</h3>
-            <p>A closure is the combination of a function bundled together with references to its surrounding state (the lexical environment). In simple terms, a closure gives an inner function access to the outer function's scope even after the outer function has returned.</p>
+            <h3>1. Start with Easy Sketches</h3>
+            <p>I find it fun to start with simple shapes like circles and squares. Then I add details like eyes, ears, and patterns.</p>
             
-            <pre><code>function createCounter() {
-    let count = 0;
-    return {
-        increment() {
-            count++;
-            return count;
-        },
-        decrement() {
-            count--;
-            return count;
-        }
-    };
-}
-const counter = createCounter();
-console.log(counter.increment()); // 1
-console.log(counter.increment()); // 2</code></pre>
-            
-            <p>Closures are widely used for data encapsulation, creating private variables, and implementing design patterns like currying.</p>
-            
-            <h3>2. Visualizing the Event Loop</h3>
-            <p>JavaScript is a single-threaded language, meaning it can only execute one command at a time. How does it handle asynchronous operations like fetching API data without freezing the browser UI? Through the Event Loop.</p>
-            <p>The call stack executes synchronous code. Asynchronous operations are handed off to the browser APIs. Once completed, callbacks are pushed to the Task Queue (macro-tasks) or Microtask Queue (Promises). The event loop continuously checks if the call stack is empty, and pushes the next queued task onto it.</p>
+            <h3>2. Use Bright Colors</h3>
+            <p>My drawings feel happy when I use bright crayons and markers. I like mixing purple and yellow or blue and pink.</p>
             
             <blockquote>
-                <strong>Important:</strong> Microtasks (Promises) always take precedence over Macrotasks (setTimeout, event listeners) when the event loop updates.
+                <strong>Tip:</strong> If a drawing does not look perfect, that is okay. It can still be special because it is yours.
             </blockquote>
             
-            <h3>3. Mastering Promises and Async/Await</h3>
-            <p>Callbacks can lead to "Callback Hell". Promises and the modern <code>async/await</code> syntax provide a cleaner, sequential flow for handling async code.</p>
-            
-            <pre><code>async function fetchUserProfile(userId) {
-    try {
-        const response = await fetch(\`https://api.github.com/users/\${userId}\`);
-        if (!response.ok) throw new Error("User not found");
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error("Error fetching user data:", error);
-    }
-}</code></pre>
+            <h3>3. Share with Friends</h3>
+            <p>I love showing my pictures to my classmates and hearing what they like. Sometimes they give me new ideas for my next drawing.</p>
             
             <h3>Conclusion</h3>
-            <p>Frameworks change constantly, but JavaScript fundamentals remain. Invest time in learning the core concepts, and you will adapt to any framework with ease.</p>
+            <p>Drawing every day makes me feel creative and happy. The more I practice, the more new ideas I discover.</p>
         `,
         comments: [
             { author: "Divya N.", text: "This is a great refresher. The event loop explanation was extremely clear!", time: "1 week ago" }
@@ -163,17 +99,97 @@ console.log(counter.increment()); // 2</code></pre>
 
 // Skills Data
 const skillsData = [
-    { name: "HTML5 & CSS3", level: 95, icon: "🎨", category: "frontend", tags: ["Semantic HTML", "Flexbox/Grid", "Responsive"] },
-    { name: "JavaScript", level: 90, icon: "⚡", category: "frontend", tags: ["ES6+", "DOM API", "Async/Promises"] },
-    { name: "React & Next.js", level: 85, icon: "⚛️", category: "frontend", tags: ["Hooks", "Context API", "SSR/SSG"] },
-    { name: "Node.js & Express", level: 75, icon: "🟢", category: "backend", tags: ["REST APIs", "Middleware", "MongoDB"] },
-    { name: "TypeScript", level: 80, icon: "📘", category: "backend", tags: ["Type Safety", "Interfaces", "Generics"] },
-    { name: "Python", level: 70, icon: "🐍", category: "backend", tags: ["Scripting", "Data Analysis", "OOP"] },
-    { name: "Git & GitHub", level: 90, icon: "📁", category: "tools", tags: ["Version Control", "PR Workflows", "Actions"] },
-    { name: "Figma & UI Design", level: 80, icon: "✒️", category: "tools", tags: ["Prototyping", "Design Systems", "Wireframes"] },
-    { name: "Technical Writing", level: 95, icon: "✍️", category: "soft", tags: ["Documentation", "Dev.to Articles", "Tutorials"] },
-    { name: "Community Leadership", level: 90, icon: "🤝", category: "soft", tags: ["DevFest Org", "Mentoring", "Public Speaking"] }
+    { name: "Student Life", level: 100, icon: "🎓", category: "all", tags: ["Coursework", "Campus Projects", "Learning"] },
+    { name: "Art & Creativity", level: 95, icon: "🎨", category: "all", tags: ["Sketching", "Digital Art", "Visual Stories"] },
+    { name: "Blogging & Writing", level: 90, icon: "✍️", category: "all", tags: ["Personal Essays", "Creative Posts", "Journal Entries"] }
 ];
+
+const pictureDBName = "ishikaGalleryDB";
+const pictureStoreName = "pictures";
+let pictureFiles = [];
+
+function openPictureDB() {
+    return new Promise((resolve, reject) => {
+        const request = indexedDB.open(pictureDBName, 1);
+
+        request.onupgradeneeded = (event) => {
+            const db = event.target.result;
+            if (!db.objectStoreNames.contains(pictureStoreName)) {
+                db.createObjectStore(pictureStoreName, { keyPath: "id" });
+            }
+        };
+
+        request.onsuccess = (event) => resolve(event.target.result);
+        request.onerror = (event) => reject(event.target.error);
+    });
+}
+
+function savePicturesToDB(items) {
+    return openPictureDB().then((db) => {
+        return new Promise((resolve, reject) => {
+            const tx = db.transaction(pictureStoreName, "readwrite");
+            const store = tx.objectStore(pictureStoreName);
+
+            items.forEach((item) => store.put(item));
+
+            tx.oncomplete = () => {
+                db.close();
+                resolve();
+            };
+            tx.onerror = () => {
+                db.close();
+                reject(tx.error);
+            };
+        });
+    });
+}
+
+function deleteAllPicturesFromDB() {
+    return openPictureDB().then((db) => {
+        return new Promise((resolve, reject) => {
+            const tx = db.transaction(pictureStoreName, "readwrite");
+            const store = tx.objectStore(pictureStoreName);
+            const request = store.clear();
+
+            request.onsuccess = () => {
+                db.close();
+                resolve();
+            };
+            request.onerror = () => {
+                db.close();
+                reject(request.error);
+            };
+        });
+    });
+}
+
+function loadPersistedPictures(container) {
+    openPictureDB().then((db) => {
+        const tx = db.transaction(pictureStoreName, "readonly");
+        const store = tx.objectStore(pictureStoreName);
+        const request = store.getAll();
+
+        request.onsuccess = () => {
+            const saved = request.result;
+            if (Array.isArray(saved) && saved.length) {
+                pictureFiles = saved.map((item) => ({
+                    id: item.id,
+                    name: item.name,
+                    dataUrl: item.dataUrl
+                }));
+                renderPictureGrid(pictureFiles, container);
+            }
+            db.close();
+        };
+
+        request.onerror = () => {
+            console.warn("Unable to load saved pictures:", request.error);
+            db.close();
+        };
+    }).catch((error) => {
+        console.warn("IndexedDB not available:", error);
+    });
+}
 
 // DOM Load Event
 document.addEventListener("DOMContentLoaded", () => {
@@ -184,6 +200,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initSkillsAnimation();
     initNavigation();
     initBlogFiltersAndSearch();
+    initPictureUpload();
     initEngagement();
     initContactForm();
 });
@@ -208,7 +225,7 @@ function initHeroTyping() {
     const typingElement = document.getElementById("typing-text");
     if (!typingElement) return;
     
-    const words = ["Frontend Developer", "Technical Writer", "Community Organizer", "Tech Enthusiast"];
+    const words = ["Student", "Artist", "Blogger"];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -400,6 +417,82 @@ function initBlogFiltersAndSearch() {
                 }
             });
         });
+    });
+}
+
+function initPictureUpload() {
+    const uploadButton = document.getElementById("picture-upload-button");
+    const fileInput = document.getElementById("picture-upload");
+    const pictureGrid = document.getElementById("picture-grid");
+
+    if (!uploadButton || !fileInput || !pictureGrid) return;
+
+    const clearButton = document.getElementById("clear-gallery-button");
+    loadPersistedPictures(pictureGrid);
+
+    uploadButton.addEventListener("click", () => fileInput.click());
+    fileInput.addEventListener("change", async () => {
+        const files = Array.from(fileInput.files || []);
+        const newItems = await Promise.all(files.map(fileToPictureItem));
+        pictureFiles = pictureFiles.concat(newItems);
+        await savePicturesToDB(newItems);
+        renderPictureGrid(pictureFiles, pictureGrid);
+        fileInput.value = "";
+    });
+
+    if (clearButton) {
+        clearButton.addEventListener("click", async () => {
+            await deleteAllPicturesFromDB();
+            pictureFiles = [];
+            renderPictureGrid(pictureFiles, pictureGrid);
+            showToast("Gallery cleared successfully.");
+        });
+    }
+}
+
+function fileToPictureItem(file) {
+    return new Promise((resolve) => {
+        const reader = new FileReader();
+        reader.onload = () => {
+            resolve({ id: `${Date.now()}-${Math.random()}`, name: file.name, dataUrl: reader.result });
+        };
+        reader.readAsDataURL(file);
+    });
+}
+
+function renderPictureGrid(files, container) {
+    container.innerHTML = "";
+
+    if (!files.length) {
+        container.innerHTML = '<div class="picture-empty">No pictures added yet. Use the button above to add images.</div>';
+        return;
+    }
+
+    files.forEach((item) => {
+        const card = document.createElement("div");
+        card.className = "picture-card";
+
+        const img = document.createElement("img");
+        img.alt = item.name;
+        img.loading = "lazy";
+
+        const caption = document.createElement("div");
+        caption.className = "picture-caption";
+        caption.textContent = item.name;
+
+        card.appendChild(img);
+        card.appendChild(caption);
+        container.appendChild(card);
+
+        if (item.dataUrl) {
+            img.src = item.dataUrl;
+        } else {
+            const reader = new FileReader();
+            reader.onload = () => {
+                img.src = reader.result;
+            };
+            reader.readAsDataURL(item);
+        }
     });
 }
 
