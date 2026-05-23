@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page Information & SEO -->
+    <title>Ishika Prajapati | Developer, Writer & Community Organizer</title>
+    <meta name="description" content="Welcome to the blog and portfolio of Ishika Prajapati, a Frontend Developer, Technical Writer, and Community Builder. Read articles on JavaScript, CSS, technical writing, and developer communities.">
+    <meta name="keywords" content="Ishika Prajapati, Portfolio, Tech Blog, Developer, Technical Writing, DevFest, React, JavaScript, CSS Grid">
+    <meta name="author" content="Ishika Prajapati">
+    
+    <!-- Open Graph Styles / Cards (SEO) -->
+    <meta property="og:title" content="Ishika Prajapati | Developer, Writer & Community Organizer">
+    <meta property="og:description" content="Explore articles and skill sets of Ishika Prajapati, developer and community leader.">
+    <meta property="og:type" content="website">
+    
+    <!-- Link Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Dynamic Ambient Background Blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Floating Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="nav-logo" id="nav-logo">
+            Ishika<span class="logo-dot"></span>Prajapati
+        </a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#blog" class="nav-link">Blog</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-controls">
+            <!-- Theme Toggle Switcher -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light and dark themes" id="theme-toggle-btn">
+                <!-- Moon icon (for switching to light) -->
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                </svg>
+                <!-- Sun icon (for switching to dark) -->
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m0 13.5V21M9.75 9.75l1.5 1.5m4.5 4.5l1.5 1.5M4.25 12h2.25m13.5 0h2.25M6.75 17.25l1.5-1.5m4.5-4.5l1.5-1.5M12 7.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9Z" />
+                </svg>
+            </button>
+            <!-- Mobile Menu Burger Button -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu" id="mobile-menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 28px; height: 28px;">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="container">
+        
+        <!-- Hero Section -->
+        <section class="section" id="home">
+            <div class="hero-content">
+                <div class="hero-text-container">
+                    <span class="hero-welcome">Welcome to my space</span>
+                    <h1 class="hero-title">Hello, I'm <span class="gradient-text">Ishika</span></h1>
+                    <div class="hero-subtitle">I'm a <span id="typing-text"></span></div>
+                    <p class="hero-desc">
+                        I build highly responsive web applications, write in-depth technical documentation, and actively organize local developer meetups to support and empower tech enthusiasts.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#blog" class="btn btn-primary" id="hero-cta-blog">Read My Blog</a>
+                        <a href="#contact" class="btn btn-secondary" id="hero-cta-contact">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-ring"></div>
+                        <img class="avatar-image" id="avatar-image" src="assets/avatar.png" alt="Ishika Prajapati Portrait">
+                    </div>
+                    <!-- Floating stats badges -->
+                    <div class="stat-badge stat-badge-1">
+                        <span class="stat-icon">✍️</span>
+                        <div class="stat-text">
+                            <h4>15+ Articles</h4>
+                            <p>Technical Guides</p>
+                        </div>
+                    </div>
+                    <div class="stat-badge stat-badge-2">
+                        <span class="stat-icon">🚀</span>
+                        <div class="stat-text">
+                            <h4>GDSC Lead</h4>
+                            <p>Community Organizer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="section" id="about">
+            <div class="section-title-wrap">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">My Journey & Background</h2>
+                <p class="section-subtitle">A blend of technical exploration, clear communication, and community coordination.</p>
+            </div>
+            
+            <div class="about-grid">
+                <!-- Bio card -->
+                <div class="about-intro-card">
+                    <h3 class="about-intro-title">Who is Ishika?</h3>
+                    <p class="highlight-quote">
+                        "I believe coding is the mechanism, writing is the clarity, and community is the amplifier."
+                    </p>
+                    <p class="about-bio">
+                        I am currently studying Computer Science and Engineering. My interest in technology lies at the intersection of frontend interface engineering and technical advocacy. I love breaking down complex ideas into manageable, beginner-friendly guides.
+                    </p>
+                    <p class="about-bio">
+                        When I'm not writing code or blog posts, I lead team meetings for technology events, mentor students in web development basics, and contribute to open-source repository configurations.
+                    </p>
+                    <div class="about-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Location:</span>
+                            <span class="meta-val">Gujarat, India</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Education:</span>
+                            <span class="meta-val">B.Tech in CSE (Expected 2027)</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Interests:</span>
+                            <span class="meta-val">UI Dev, Technical Writing, Event Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline of milestones -->
+                <div class="about-timeline-section">
+                    <h3 class="timeline-title">Key Milestones</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <h4 class="timeline-role">Google Developer Student Clubs Lead</h4>
+                                    <span class="timeline-date">2025 - Present</span>
+                                </div>
+                                <div class="timeline-company">GDSC University Chapter</div>
+                                <p class="timeline-desc">Leading a group of 30+ students to organize technical workshops, hackathons, and study groups on Flutter, Web Tech, and Cloud Fundamentals.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <h4 class="timeline-role">Freelance Technical Writer</h4>
+                                    <span class="timeline-date">2024 - Present</span>
+                                </div>
+                                <div class="timeline-company">Dev.to, Medium, Tech Publications</div>
+                                <p class="timeline-desc">Writing deep-dive articles explaining core JavaScript behavior, styling hacks, and CSS Grid optimization. Gained over 10k reads across platforms.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <h4 class="timeline-role">Core Event Organizer</h4>
+                                    <span class="timeline-date">Dec 2025</span>
+                                </div>
+                                <div class="timeline-company">Google Developer Group DevFest</div>
+                                <p class="timeline-desc">Coordinated ticketing, speaker alignment, and visual assets for DevFest. Interacted with industry leaders and managed attendee registrations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skill Sets Section -->
+        <section class="section" id="skills">
+            <div class="section-title-wrap">
+                <span class="section-tag">Skills</span>
+                <h2 class="section-title">My Tech Stack & Expertise</h2>
+                <p class="section-subtitle">Here are the technologies and tools I work with daily to bring ideas to life.</p>
+            </div>
+
+            <!-- Skills categorization filter -->
+            <div class="skills-filter-container">
+                <button class="filter-btn active" data-filter="all" id="filter-all">All Skills</button>
+                <button class="filter-btn" data-filter="frontend" id="filter-frontend">Frontend Development</button>
+                <button class="filter-btn" data-filter="backend" id="filter-backend">Languages & Backend</button>
+                <button class="filter-btn" data-filter="tools" id="filter-tools">Tools & Design</button>
+                <button class="filter-btn" data-filter="soft" id="filter-soft">Soft Skills & Advocacy</button>
+            </div>
+
+            <!-- Skills grid container (Rendered via app.js) -->
+            <div class="skills-grid" id="skills-grid"></div>
+        </section>
+
+        <!-- Community Post (Blog) Section -->
+        <section class="section" id="blog">
+            <div class="section-title-wrap">
+                <span class="section-tag">Community Post</span>
+                <h2 class="section-title">From the Dev Notebook</h2>
+                <p class="section-subtitle">Articles, observations, and guides detailing developer experience, interface challenges, and community learning.</p>
+            </div>
+
+            <!-- Search and category pills -->
+            <div class="blog-controls">
+                <div class="search-bar-wrap">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.637 10.637Z" />
+                    </svg>
+                    <input type="text" class="search-input" id="blog-search" placeholder="Search blog posts by title, keywords or content..." aria-label="Search blog posts">
+                </div>
+                <div class="blog-tags-container">
+                    <button class="blog-tag-btn active" id="tag-all">All</button>
+                    <button class="blog-tag-btn" id="tag-dev">Web Dev</button>
+                    <button class="blog-tag-btn" id="tag-writing">Writing</button>
+                    <button class="blog-tag-btn" id="tag-community">Community</button>
+                </div>
+            </div>
+
+            <!-- Blog Grid (Rendered via app.js) -->
+            <div class="blog-grid" id="blog-grid"></div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <div class="section-title-wrap">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Have a technical writing role, a speaker request, or want to build something together? Drop a line!</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer with Contacts & Socials -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Branding info -->
+                <div class="footer-info">
+                    <a href="#home" class="footer-logo">Ishika<span class="logo-dot"></span>Prajapati</a>
+                    <p class="footer-desc">A passionate frontend developer, community leader, and documentation writer building elegant, responsive user experiences.</p>
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile" id="social-github">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile" id="social-linkedin">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Twitter Profile" id="social-twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="https://dev.to" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Dev.to Blog" id="social-dev">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" style="width: 18px; height: 18px;">
+                                <path d="M120.12 208.29c-3.88-2.9-7.77-4.35-11.65-4.35H91.03v104.06h17.45c3.88 0 7.77-1.45 11.65-4.35 3.88-2.9 5.82-7.25 5.82-13.06v-69.25c.01-5.8-1.93-10.16-5.83-13.05zm303.6 26.75c-5.83-5.8-14.56-8.7-26.22-8.7H356v104.06h41.52c11.65 0 20.39-2.9 26.22-8.7 5.83-5.8 8.74-14.5 8.74-26.1V261.13c0-11.59-2.9-20.29-8.76-26.09zM297.2 203.94h-64.35v104.06h64.35V288.2h-43.83v-19.33h36.29v-19.33h-36.29v-26.29h43.83v-19.32zm86.29 57.19h-26.9v19.32h26.9v-19.32zm-26.9-37.19h26.9v19.32h-26.9v-19.32zM224 32C96 32 0 128 0 256s96 224 224 224 224-96 224-224S352 32 224 32zm-73.66 222.09c0 14.5-3.88 26.1-11.65 34.8-7.77 8.7-19.4 13.05-34.91 13.05H70.36V184.66h33.42c15.51 0 27.14 4.35 34.91 13.05 7.77 8.7 11.65 20.3 11.65 34.8v21.58zm108.97-51.27h-43.83v36.29h36.29v19.33h-36.29v29.01h43.83v19.32h-64.35V184.66h64.35v19.32zm148.6 84.7c0 14.5-3.88 26.1-11.65 34.8-7.77 8.7-19.4 13.05-34.91 13.05h-52.28V184.66h52.28c15.51 0 27.14 4.35 34.91 13.05 7.77 8.7 11.65 20.3 11.65 34.8v22.08z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer Quick Links -->
+                <div class="footer-links-col">
+                    <h3 class="footer-title">Navigation</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#about" class="footer-link">About Me</a></li>
+                        <li><a href="#skills" class="footer-link">Skill Sets</a></li>
+                        <li><a href="#blog" class="footer-link">Community Post</a></li>
+                    </ul>
+                </div>
+
+                <!-- Simulated Contact Box -->
+                <div class="contact-form-col">
+                    <h3 class="footer-title">Quick Message</h3>
+                    <form class="contact-form" id="contact-form">
+                        <input type="text" class="contact-input" id="contact-name" placeholder="Your Name" required>
+                        <input type="email" class="contact-input" id="contact-email" placeholder="Your Email" required>
+                        <textarea class="contact-input contact-textarea" id="contact-message" placeholder="Your Message..." required></textarea>
+                        <button type="submit" class="btn btn-primary btn-submit" id="contact-submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer baseline -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ishika Prajapati. All rights reserved.</p>
+                <p>Designed with ❤️ using Vanilla HTML & CSS</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Full Screen Immersive Blog Reader Modal -->
+    <div class="modal-overlay" id="blog-modal">
+        <div class="modal-container">
+            <button class="modal-close-btn" onclick="closeModal()" aria-label="Close article reader">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 24px; height: 24px;">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <div class="modal-img-wrap">
+                <img class="modal-img" src="" alt="Blog cover header">
+            </div>
+            <div class="modal-content">
+                <h2 class="modal-title"></h2>
+                
+                <div class="modal-meta-row">
+                    <div class="modal-meta">
+                        <span class="modal-date"></span>
+                        <span class="modal-readtime"></span>
+                    </div>
+                </div>
+
+                <!-- Post Text (HTML content injected) -->
+                <article class="modal-body"></article>
+
+                <!-- Share & Comments -->
+                <div class="modal-footer-engagement">
+                    <div class="modal-engagement-bar">
+                        <button class="engage-btn modal-like-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
+                            <span class="modal-like-count"></span> Likes
+                        </button>
+                    </div>
+
+                    <!-- Dynamic commenting block -->
+                    <div class="modal-comments-section">
+                        <h3 class="modal-comments-title">Comments</h3>
+                        
+                        <form class="comment-form" id="modal-comment-form">
+                            <input type="text" class="comment-input" id="comment-author-input" placeholder="Your Name" style="max-width: 200px;" required>
+                            <input type="text" class="comment-input" id="comment-text-input" placeholder="Add a comment..." required>
+                            <button type="submit" class="btn btn-primary" style="padding: 0.5rem 1.5rem; border-radius: 12px;" id="comment-submit-btn">Post</button>
+                        </form>
+                        
+                        <div class="comments-list" id="comments-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Toast Notification Wrapper -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Script imports -->
+    <script src="app.js"></script>
+</body>
+</html>
